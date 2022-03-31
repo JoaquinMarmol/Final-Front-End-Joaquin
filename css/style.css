@@ -1,3 +1,4 @@
+/*movil 480 y escritorio 1440 */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -369,6 +370,8 @@ nav.navfooter ul a :hover{
     cursor: pointer;
     color: #F3603B;
   }
+
+  /*movil 480 y escritorio 1440 */
 @media screen and (min-width:740px) {
     html{
         background-image: url(../img/bg-tablet-pattern.svg), url(../img/bg-tablet-pattern.svg);
