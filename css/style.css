@@ -5,10 +5,12 @@
     font-family: 'Be Vietnam Pro', sans-serif;
 }
 html{
-    background: url("../img/bg-tablet-pattern.svg");
+    background-image: url(./img/bg-tablet-pattern.svg);
     background-repeat: no-repeat;
-    background-size: 50vw;
-    background-position: 120% -20%;
+    background-position: top right;
+    background-position-x: 68%;
+    background-position-y: -15%;
+
     text-align: center;
 }
 
@@ -116,22 +118,23 @@ button:hover{
 .contador{
     position: relative;
     bottom: -5rem;   
-    right:1.5rem;
+    
 }
 .contador2{
     position:relative;
     bottom: -5rem;
-    right: 1.5rem;
+    
 }
 .contador3{
     position: relative;
     bottom: -4.3rem;
-    right: 1.5rem;
+    
 }
 .botonesimg{
     margin: auto;
     position: relative;
     z-index: 9;
+    left: 1.6rem;
 }
 h3{
     color: #323851;
@@ -182,9 +185,11 @@ h3.subtitulitos{
     color: #fff;
 }
 .texto{
-    font-weight: 700;
+    font-weight: 500;
     font-size: 40px;
     line-height: 48px;
+    margin-right: 4rem;
+    margin-left: 4rem;
 }
 .naranja .botonblanco{
     background-color: #FFFFFF;
@@ -216,7 +221,7 @@ h3.subtitulitos{
     align-items: center;
     scroll-snap-align: center; 
     min-width: 100%;
-    background-color: rgb(255, 239, 234);
+    background-color: rgb(249, 249, 249);
     padding: 0 2rem 2rem;
   }
  button.go{
@@ -231,11 +236,11 @@ h3.subtitulitos{
     color: #fff;
  }
   .radios {
-      width: 50px;
+    width: 50px;
   }
 
   .menu {
-      display:none;
+    display:none;
   }
   .footer{
     color:white;
@@ -256,29 +261,29 @@ h3.subtitulitos{
 
 }
   .navcontainer{
-      display: flex;
-      flex-direction: row;
-      justify-content: space-around;
-      width: 350px;
-      align-self: center; 
-      margin:0.6rem;
-  }
-  .futer{
-      display: flex;
-      justify-content: flex-start;
-  }
-  .futer ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 350px;
+    align-self: center; 
+    margin:0.6rem;
+}
+  .navfooter{
+    display: flex;
+    justify-content: flex-start;
+}
+  .navfooter ul{
     display: flex;
     flex-direction: column;
     
     align-items: flex-start;
-  }
-  li.footer{
-      margin-top: 1rem;
-  }
+}
+    li.footer{
+    margin-top: 1rem;
+}
   .iconos{
-      display: flex;
-      justify-content: space-around;
+    display: flex;
+    justify-content: space-around;
   }
   .formulario{
     width: 280px;
@@ -286,6 +291,13 @@ h3.subtitulitos{
     border-radius: 23px;
     padding: 20px;
   }
+input[type="email"]:invalid{ 
+    border: 4px solid rgb(235, 12, 12);
+}
+
+input[type="email"]:valid{
+    border: 2px solid grey;
+}
   .grisoscuro{
     color: #8C8C94;
   }
@@ -300,10 +312,16 @@ h3.subtitulitos{
    a{
     text-decoration: none;
   }
-nav.futer ul a :hover{
+nav.navfooter ul a :hover{
     color: #F3603B;
   }
-  .iconocontainer ul a :hover{
+    .socials{
+        color: white;
+        list-style: none;
+        font-size: 2rem;
+    }
+    .socials:hover{
+    cursor: pointer;
     color: #F3603B;
   }
 
@@ -397,7 +415,7 @@ nav.futer ul a :hover{
         align-items: center;
         scroll-snap-align: center; 
         min-width:33%;
-        background-color: rgb(255, 239, 234);
+        background-color: rgb(249, 249, 249);
         padding: 0 2rem 2rem;
     }
     input.radio{
@@ -426,6 +444,10 @@ nav.futer ul a :hover{
         padding-left: 7rem; 
         padding-right:8.3rem;
     }
+    .texto{
+        margin-right: 30rem;
+        margin-left: auto;
+    }
     .footer{
         color:white;
         display: flex;
@@ -442,6 +464,7 @@ nav.futer ul a :hover{
         align-content:space-around;
         position: relative;
         top: 4rem;
+        left: 0.2rem;
     }
     .iconocontainer{
         display: flex;
@@ -485,12 +508,16 @@ nav.futer ul a :hover{
     }
     .contador2{
         position:relative;
-        bottom: -4.4rem;
+        bottom: -5rem;
     }
     .contador3{
         position: relative;
-        bottom: -4.3rem;
+        bottom: -5rem;
     }
+    .botonesimg{
+        left: 0;
+    }
+    
 
     #Pricing{
         color:#242E52
@@ -509,5 +536,32 @@ nav.futer ul a :hover{
     }
     li.footer{
         margin-top: 1.6rem;  
+    }
+    #logo {
+        height: 2.2rem;
+    }
+    .grisoscuro{
+        position: relative;
+        bottom: 8.5rem;
+        left: 27rem;
+    }
+    form{
+        position:relative;
+        bottom: 3rem;
+    }
+    .nav1{
+    position: relative;
+    right: 4rem;
+    }
+    .nav2{
+    position: relative;
+    }
+    .formulario{
+        height: 3.5rem;
+        width: 14rem;
+    }
+    button.go{
+        width: 4.5rem;
+        height: 3.5rem;
     }
 } 
